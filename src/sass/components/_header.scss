@@ -1,0 +1,79 @@
+.page-header{
+    background-color: $header-bg-color;
+}
+
+.container{
+    width: 1680px;
+    padding: 20px 30px;
+
+    &.header{
+        height: 80px;
+        margin: 0 auto;
+    }
+}
+
+.nav-container{
+    display: flex;
+    align-items: baseline;
+}
+
+.menu-container{
+    @extend .nav-container;
+    width: 100%;
+    
+    justify-content: space-between;
+    & .navigation,
+    & .registration{
+        display: flex;
+    }
+}
+
+.reg-item{
+    &:nth-child(2) {
+        margin-left: 15px;
+    }
+}
+
+.wrap{
+    margin-right: 50px;
+}
+
+.logo{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.header-aliba{
+    @extend .logo;
+    color: $accent-color;
+}
+
+.header-games{
+    @extend .logo;
+     color: $primary-text-color;
+}
+
+
+.nav-link{
+    color: $primary-text-color;
+    position: relative;
+
+    &.current::after{
+        display: block;
+        position: absolute;
+        left: 0;
+        margin-top: 21px;
+        content: "";
+        width: 100%;
+        border: 3px solid $accent-color;
+    }
+}
+
+.nav-item{
+    text-transform: uppercase;
+
+    &:not(:last-child){
+    margin-right: 30px;
+    }
+}

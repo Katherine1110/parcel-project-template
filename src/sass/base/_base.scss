@@ -1,0 +1,60 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+p, h1{
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    color: $primary-text-color;
+    background-color: $accent-color;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &.hero-btn {
+        width: 114px;
+        height: 44px;
+    }
+}
+
+.header-button{
+    @extend .button;
+
+    background-color: transparent; 
+    border: 2px solid #A73DD4;
+    text-transform: capitalize;
+
+    &.language{
+        border: none;
+        margin-left: 10px;
+    }    
+}
