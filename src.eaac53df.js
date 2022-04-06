@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/newGame.png":[["newGame.ceacfdda.png","WQHQ"],"WQHQ"],"./../images/battleRoyal.png":[["battleRoyal.867335bc.png","DguM"],"DguM"],"./../images/ninja.png":[["ninja.40a6ac82.png","ahP7"],"ahP7"],"./../images/clash.png":[["clash.a5e3ec8b.png","zOpV"],"zOpV"],"./../images/pirate.png":[["pirate.c97b6dfd.png","fHHz"],"fHHz"],"./../images/hentai.png":[["hentai.2286f2ed.png","IWxZ"],"IWxZ"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),console.log("fghjk");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/test-task-alibaGames/src.bc273c74.js.map
+//# sourceMappingURL=/src.eaac53df.js.map
