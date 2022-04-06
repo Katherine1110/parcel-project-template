@@ -8,7 +8,7 @@
     padding-right: 0px;
 
     &.content {
-        height: 930px;
+        max-width: 100%;
         margin: 0 auto;
     }
 }
@@ -18,33 +18,37 @@
     height: 400px;
 }
 
-.slider-item:first-child{
-    background: linear-gradient(80.06deg, rgba(34, 34, 67, 0.8) 0%, rgba(34, 34, 67, 0) 68.87%), url(../images/newGame.png);
+.slider-item{
     background-repeat: no-repeat;
-    width: 75%;
     border-radius: 20px;
     padding: 40px;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
+    & .name {
+        white-space: nowrap;
+        overflow: hidden;
+
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 75px;
+        color: $primary-text-color;
+        margin-bottom: 15px;
+    }
+}
+
+.slider-item:first-child{
+    background: linear-gradient(80.06deg, rgba(34, 34, 67, 0.8) 0%, rgba(34, 34, 67, 0) 68.87%), url(../images/newGame.png);
+    width: 1207px;
 }
 
 .slider-item:last-child {
     background: linear-gradient(270deg, #2D2D45 0%, rgba(45, 45, 69, 0) 100%), url(../images/battleRoyal.png);
-    background-repeat: no-repeat;
-    width: 25%;
-    border-radius: 20px;
+    width: 412px;
     margin-left: 30px;
-    padding: 40px;
     padding-right: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-    & .name{
-        white-space: nowrap;
-        overflow: hidden;
-    }
 }
 
 .title{
@@ -54,12 +58,3 @@
     font-size: 22px;
     line-height: 33px;
 }
-
-.name{
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 75px;
-    color: $primary-text-color;
-    margin-bottom: 15px;
-}
-

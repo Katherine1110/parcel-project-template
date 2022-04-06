@@ -1,0 +1,66 @@
+.games {
+    background-color: $body-bg-color;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+// .games {
+//     width: 1680px;
+//     // padding-right: 30px;
+// }
+
+.games-list {
+    display: flex;
+    justify-content: center;
+    height: 440px;
+}
+
+.game-list_item{
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 20px;
+    width: 382px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.game-list_item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.game-list_item:first-child {
+    background: linear-gradient(0deg, #202031 0%, rgba(32, 32, 49, 0) 70%), url(../images/ninja.png);
+}
+
+.game-list_item:nth-child(2) {
+    background: linear-gradient(0deg, #202031 0%, rgba(32, 32, 49, 0) 70%),
+        url(../images/clash.png);
+}
+
+.game-list_item:nth-child(3) {
+    background: linear-gradient(0deg, #202031 0%, rgba(32, 32, 49, 0) 70%),
+        url(../images/pirate.png);
+}
+
+.game-list_item:nth-child(4) {
+    background: linear-gradient(0deg, #202031 0%, rgba(32, 32, 49, 0) 70%),
+        url(../images/hentai.png);
+}
+
+.button.play{
+    text-transform: capitalize;
+    width: 75px;
+    height: 44px;
+}
+
+.item-title{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: $primary-text-color;
+    margin-bottom: 10px;
+}
